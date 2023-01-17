@@ -14,8 +14,25 @@ body {
     font-size: 20px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background: var(--cor-de-fundo);
+    font-size: 18px;
+}
+
+.navbar img {
+    height: 8vh;
+}
+
+.nav__lista {
+    display: flex;
+}
+
 .principal {
-    height: 100vh;
+    height: 92vh;
     background: var(--cor-de-fundo);
     display: flex;
     align-items: center;
