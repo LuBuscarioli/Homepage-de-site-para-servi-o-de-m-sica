@@ -5,17 +5,17 @@
 
 :root{
     --cor-de-fundo: #fffae4;
+    --cinza-txt: #686868;
     --laranja-principal: #f85f00;
 }
 
 body {
     font-family: 'Epilogue';
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .principal {
     height: 100vh;
-    width: 100vw;
     background: var(--cor-de-fundo);
     display: flex;
     align-items: center;
@@ -23,12 +23,18 @@ body {
 }
 
 .principal__titulo {
-    font-size: 80px;
+    font-size: 75px;
     font-weight: 700;
 }
 
+.principal__descricao {
+    margin: 1.5em 0;
+    font-weight: 500;
+    color: var(--cinza-txt);
+}
+
 .principal__button {
-    margin: 2em 0;
+    margin-bottom: 1em;
 }
 
 .principal__button a {
@@ -36,9 +42,20 @@ body {
     padding: 1em;
     color: white;
     background-color: var(--laranja-principal);
+    display: block;
+    width: fit-content;
+    border-radius: 10px;
 }
 
-.flyer {
-    width: 32vw;
-    padding-top: 1em;
+.principal__esq-imgs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.principal__dir img {
+    height: 65vh;
+    max-height: 650px;
+    min-height: 450px;
 }
