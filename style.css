@@ -11,25 +11,53 @@
 
 body {
     font-family: 'Epilogue';
-    font-size: 20px;
+    font-size: 18px;
 }
 
+/****************** NAV INÍCIO *************** */
+
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
     height: 8vh;
+    grid-template-columns: 1fr 5fr 1fr;
     background: var(--cor-de-fundo);
-    font-size: 18px;
+    font-size: 16px;
+    align-items: center;
+    padding-top: 1em;
 }
 
 .navbar img {
     height: 8vh;
+    margin-left: 4em;
+    min-height: 75px;
 }
 
 .nav__lista {
-    display: flex;
+   display: flex;
 }
+
+.nav__lista li {
+    list-style: none;
+}
+
+.nav__lista a {
+    color: var(--cinza-txt);
+    text-decoration: none;
+    padding-right: 1em;
+}
+
+.nav__buttons {
+    display: flex;
+    margin-right: 1em;
+}
+
+.nav__buttons a {
+    text-decoration: none;
+    color:var(--cinza-txt);
+    margin-left: 1em;
+}
+
+/****************** NAV FIM *************** */
 
 .principal {
     height: 92vh;
@@ -74,5 +102,5 @@ body {
 .principal__dir img {
     height: 65vh;
     max-height: 650px;
-    min-height: 450px;
+    min-height: 500px;
 }
