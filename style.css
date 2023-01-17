@@ -38,12 +38,13 @@ body {
 
 .nav__lista li {
     list-style: none;
+    letter-spacing: 2px;
 }
 
 .nav__lista a {
     color: var(--cinza-txt);
     text-decoration: none;
-    padding-right: 1em;
+    padding-right: 2em;
 }
 
 .nav__buttons {
@@ -55,6 +56,7 @@ body {
     text-decoration: none;
     color:var(--cinza-txt);
     margin-left: 1em;
+    letter-spacing: 2px;
 }
 
 /****************** NAV FIM *************** */
