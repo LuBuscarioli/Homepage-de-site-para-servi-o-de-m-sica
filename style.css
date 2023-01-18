@@ -7,6 +7,8 @@
     --cor-de-fundo: #fffae4;
     --cinza-txt: #686868;
     --laranja-principal: #f85f00;
+    --laranja-efeito: rgb(255, 170, 22);
+    --laranja-escuro: rgb(158, 50, 0);
 }
 
 body {
@@ -21,7 +23,6 @@ body {
     height: 8vh;
     grid-template-columns: 1fr 5fr 1fr;
     background: var(--cor-de-fundo);
-    font-size: 16px;
     align-items: center;
     padding-top: 2vh;
 }
@@ -71,11 +72,57 @@ body {
 
 .nav__buttons a:hover {
     color: white;
-    background: rgb(255, 170, 22);
+    background: var(--laranja-efeito);
     transition: 300ms;
 }
 
 /****************** NAV FIM *************** */
+
+/***************** DROP INÍCIO ***************/
+
+.comecar__drop {
+    display: grid;
+    position: absolute;
+    border: 2px solid var(--laranja-principal);
+    box-shadow: 0 0 10px;
+    padding: 0.5em;
+    border-radius: 10px;
+    top: 90px;
+    left: 200px;
+    height: 200px;
+}
+
+.comecar__drop p {
+    padding: 8px 0;
+    color: var(--cinza-txt);
+}
+
+.comecar__drop img {
+    padding-right: 5px;
+}
+
+.conta__drop {
+    display: grid;
+    position: absolute;
+    border: 2px solid var(--laranja-principal);
+    box-shadow: 0 0 10px;
+    padding: 0.5em;
+    border-radius: 10px;
+    top: 90px;
+    left: 370px;
+    height: 200px;
+}
+
+.conta__drop p {
+    padding: 8px 0;
+    color: var(--cinza-txt);
+}
+
+.conta__drop img {
+    padding-right: 5px;
+}
+
+/*********** DROP FIM ************************/
 
 .principal {
     height: 90vh;
