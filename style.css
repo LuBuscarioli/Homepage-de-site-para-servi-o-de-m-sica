@@ -14,7 +14,7 @@ body {
     font-size: 18px;
 }
 
-/****************** NAV INÍCIO *************** */
+/****************** NAV INÃCIO *************** */
 
 .navbar {
     display: grid;
@@ -23,7 +23,7 @@ body {
     background: var(--cor-de-fundo);
     font-size: 16px;
     align-items: center;
-    padding-top: 1em;
+    padding-top: 2vh;
 }
 
 .navbar img {
@@ -45,24 +45,40 @@ body {
     color: var(--cinza-txt);
     text-decoration: none;
     padding-right: 2em;
+    transition: 300ms;
+}
+
+.nav__lista a:hover {
+    color: black;
+    transition: 300ms;
 }
 
 .nav__buttons {
     display: flex;
-    margin-right: 1em;
+    margin-right: 2em;
 }
 
 .nav__buttons a {
     text-decoration: none;
-    color:var(--cinza-txt);
-    margin-left: 1em;
+    color: var(--cor-de-fundo);
+    background: var(--laranja-principal);
+    padding: 1em;
+    border-radius: 10px;
+    margin-left: 2em;
     letter-spacing: 2px;
+    transition: 300ms;
+}
+
+.nav__buttons a:hover {
+    color: white;
+    background: rgb(255, 170, 22);
+    transition: 300ms;
 }
 
 /****************** NAV FIM *************** */
 
 .principal {
-    height: 92vh;
+    height: 90vh;
     background: var(--cor-de-fundo);
     display: flex;
     align-items: center;
@@ -84,14 +100,22 @@ body {
     margin-bottom: 1em;
 }
 
+.principal__button a:hover {
+    background-color: var(--laranja-principal);
+    color: var(--cor-de-fundo);
+    transition: 300ms;
+}
+
 .principal__button a {
     text-decoration: none;
     padding: 1em;
-    color: white;
-    background-color: var(--laranja-principal);
+    color: var(--cinza-txt);
+    background:transparent;
     display: block;
     width: fit-content;
     border-radius: 10px;
+    border: 2px solid var(--laranja-principal);
+    transition:200ms;
 }
 
 .principal__esq-imgs {
