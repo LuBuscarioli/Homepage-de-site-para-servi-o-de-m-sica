@@ -20,17 +20,17 @@ body {
 
 .navbar {
     display: grid;
-    height: 8vh;
+    height: 90px;
     grid-template-columns: 1fr 13fr 1fr;
     background: var(--cor-de-fundo);
     align-items: center;
-    padding-top: 2vh;
+    /* padding-top: 2vh; */
 }
 
-.navbar img {
-    height: 8vh;
+.navbar__logo {
+    height: 80px;
     margin-left: 2em;
-    min-height: 75px;
+    min-height: 70px;
 }
 
 .nav__lista {
@@ -84,17 +84,21 @@ body {
 /***************** DROP INICIO ***************/
 
 .comecar__drop {
-    display: grid;
+    display: none;
     position: absolute;
     border: 2px solid var(--laranja-principal);
     box-shadow: 0 0 10px var(--laranja-escuro);
     background-color: var(--cor-de-fundo);
     padding: 0.5em;
     border-radius: 10px;
-    top: 90px;
+    top: 80px;
     left: 130px;
     height: 200px;
     width: 150px;
+}
+
+.comecar__drop.active {
+    display: grid;
 }
 
 .comecar__drop p {
@@ -107,17 +111,21 @@ body {
 }
 
 .conta__drop {
-    display: grid;
+    display: none;
     position: absolute;
     border: 2px solid var(--laranja-principal);
     box-shadow: 0 0 10px var(--laranja-escuro);
     background-color: var(--cor-de-fundo);
     padding: 0.5em;
     border-radius: 10px;
-    top: 90px;
-    left: 306px;
+    top: 80px;
+    left: 325px;
     height: 200px;
     width: 150px;
+}
+
+.conta__drop.active {
+    display: grid;
 }
 
 .conta__drop p {
@@ -132,11 +140,13 @@ body {
 /*********** DROP FIM ************************/
 
 .principal {
-    height: 90vh;
+    height: 92vh;
     background: var(--cor-de-fundo);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    /* border: 1px solid red; */
+    min-height: 600px;
 }
 
 .principal__titulo {
@@ -177,6 +187,10 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 2em;
+}
+
+.principal__esq-imgs img {
+    width: 50px;
 }
 
 .principal__dir img {
