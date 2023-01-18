@@ -16,12 +16,12 @@ body {
     font-size: 18px;
 }
 
-/****************** NAV INÃCIO *************** */
+/****************** NAV INiCIO *************** */
 
 .navbar {
     display: grid;
     height: 8vh;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 13fr 1fr;
     background: var(--cor-de-fundo);
     align-items: center;
     padding-top: 2vh;
@@ -29,23 +29,26 @@ body {
 
 .navbar img {
     height: 8vh;
-    margin-left: 4em;
+    margin-left: 2em;
     min-height: 75px;
 }
 
 .nav__lista {
    display: flex;
+   justify-content: flex-start;
 }
 
 .nav__lista li {
     list-style: none;
     letter-spacing: 2px;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 .nav__lista a {
     color: var(--cinza-txt);
     text-decoration: none;
-    padding-right: 2em;
+    /* padding-right: 2em; */
     transition: 300ms;
 }
 
@@ -56,7 +59,7 @@ body {
 
 .nav__buttons {
     display: flex;
-    margin-right: 2em;
+    /* margin-right: 2em; */
 }
 
 .nav__buttons a {
@@ -65,7 +68,7 @@ body {
     background: var(--laranja-principal);
     padding: 1em;
     border-radius: 10px;
-    margin-left: 2em;
+    margin-right: 1em;
     letter-spacing: 2px;
     transition: 300ms;
 }
@@ -78,18 +81,20 @@ body {
 
 /****************** NAV FIM *************** */
 
-/***************** DROP INÍCIO ***************/
+/***************** DROP INICIO ***************/
 
 .comecar__drop {
     display: grid;
     position: absolute;
     border: 2px solid var(--laranja-principal);
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 10px var(--laranja-escuro);
+    background-color: var(--cor-de-fundo);
     padding: 0.5em;
     border-radius: 10px;
     top: 90px;
-    left: 200px;
+    left: 130px;
     height: 200px;
+    width: 150px;
 }
 
 .comecar__drop p {
@@ -105,12 +110,14 @@ body {
     display: grid;
     position: absolute;
     border: 2px solid var(--laranja-principal);
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 10px var(--laranja-escuro);
+    background-color: var(--cor-de-fundo);
     padding: 0.5em;
     border-radius: 10px;
     top: 90px;
-    left: 370px;
+    left: 306px;
     height: 200px;
+    width: 150px;
 }
 
 .conta__drop p {
