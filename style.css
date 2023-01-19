@@ -250,11 +250,11 @@ body {
     }
 
     .comecar__drop {
-        left: 105px;
+        left: 52px;
     }
 
     .conta__drop {
-        left: 285px;
+        left: 232px;
     }
 
     .navbar__logo {
@@ -272,7 +272,7 @@ body {
     }
 
     .principal__button a {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .principal__dir img {
@@ -292,16 +292,73 @@ body {
     .navbar {
         font-size: 12px;
     }
+}
 
-    .nav__buttons{
-        margin-right: 2em;
+@media screen and (max-width: 425px) {
+    .navbar__logo {
+        height: 50px;
+        margin-left: 2em;
     }
 
-    .comecar__drop {
-        left: 105px;
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 60px;
+    }
+    
+    .nav__lista {
+        display: none;
     }
 
-    .conta__drop {
-        left: 285px;
+    .nav__buttons {
+        display:none;
+    }
+
+    .comecar__drop{
+        display: none;
+    }
+
+    .conta__drop{
+        display: none;
+    }
+
+    .principal{
+        flex-direction: column-reverse;
+        padding-top: 8em;
+    }
+
+    .principal__titulo{
+        padding-top: 0.5em;
+    }
+
+    .principal__button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .principal__esq-imgs {
+        margin: 2em 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .principal__descricao{
+        font-size: 12px;
+    }
+
+    .principal{
+        flex-direction: column-reverse;
+        padding-top: 7.5em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .principal__titulo {
+        font-size: 35px;
+    }
+
+    .principal{
+        flex-direction: column-reverse;
+        padding-top: 6.5em;
     }
 }
