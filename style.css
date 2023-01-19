@@ -40,7 +40,7 @@ body {
 }
 
 .nav__lista img{
-    width: 15px;
+    width: 12px;
 }
 
 .nav__lista img:hover{
@@ -176,10 +176,10 @@ body {
     height: 80vh;
     background: var(--cor-de-fundo);
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
     /* border: 1px solid red; */
     min-height: 500px;
+    align-items: center;
 }
 
 .principal__titulo {
@@ -194,7 +194,7 @@ body {
 }
 
 .principal__button {
-    margin-bottom: 1em;
+    margin-top: 2em;
 }
 
 .principal__button a:hover {
@@ -233,12 +233,64 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+
+    .navbar {
+        font-size: 14px;
+        padding-top: 0px;
+    }
+
+    .nav__lista li {
+        letter-spacing: 1px;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+
+    .nav__buttons{
+        margin-right: 2em;
+    }
+
+    .comecar__drop {
+        left: 105px;
+    }
+
+    .conta__drop {
+        left: 285px;
+    }
+
+    .navbar__logo {
+        height: 60px;
+        margin-left: 2em;
+        min-height: 50px;
+    }
+
     .principal__titulo {
         font-size: 55px;
     }
 
-    .navbar {
+    .principal__descricao {
         font-size: 14px;
+    }
+
+    .principal__button a {
+        font-size: 12px;
+    }
+
+    .principal__dir img {
+        height: 65vh;
+        max-height: 650px;
+        min-height: 400px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    
+    .principal__titulo {
+        font-size: 45px;
+    }
+
+    .navbar {
+        font-size: 12px;
     }
 
     .nav__buttons{
