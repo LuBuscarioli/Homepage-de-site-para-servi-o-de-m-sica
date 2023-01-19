@@ -96,7 +96,7 @@ body {
     width: 32px;
     height: 2px;
     margin: 8px;
-    background: var(--cinza-txt);
+    background: black;
 }
 
 /****************** NAV FIM *************** */
@@ -250,6 +250,8 @@ body {
     display: none;
 }
 
+/******************* MEDIA QUERY **********************/
+
 @media screen and (max-width: 1024px) {
 
     .navbar {
@@ -330,19 +332,37 @@ body {
     }
     
     .nav__lista {
-        display: none;
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 50vw;
+        height: 80vh;
+        background: var(--cor-de-fundo);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid var(--laranja-principal);
+        border-radius: 5px;
+        box-shadow: 0 0 10px var(--cinza-txt);
+    }
+
+    .comecar__drop.active {
+        top: 60px;
+        transition: 400ms;
+    }
+
+    .conta__drop {
+        left: 56px;
+    }
+
+    .conta__drop.active {
+        top: 200px;
+        left: 56px;
+        transition: 400ms;
     }
 
     .nav__buttons {
         display:none;
-    }
-
-    .comecar__drop{
-        display: none;
-    }
-
-    .conta__drop{
-        display: none;
     }
 
     .principal{
