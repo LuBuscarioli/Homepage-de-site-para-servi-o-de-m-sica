@@ -87,6 +87,18 @@ body {
     transition: 300ms;
 }
 
+.nav__hamb {
+    cursor: pointer;
+    display: none;
+}
+
+.nav__hamb div {
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    background: var(--cinza-txt);
+}
+
 /****************** NAV FIM *************** */
 
 /***************** DROP INICIO ***************/
@@ -97,13 +109,13 @@ body {
     background-color: var(--cor-de-fundo);
     padding: 0.5em;
     border-radius: 10px;
-    top: 80px;
+    top: -145px;
     left: 130px;
     height: 200px;
     width: 157px;
     overflow: hidden;
     max-height: 0px;
-    transition: 300ms;
+    transition: 200ms;
     opacity: 0;
 }
 
@@ -113,9 +125,10 @@ body {
     box-shadow: 0 0 10px var(--laranja-escuro);
     overflow-y: hidden;
     max-height: 150px;
-    transition: 400ms;
+    transition: 600ms;
     opacity: 1;
     align-content: space-around;
+    top: 80px;
 }
 
 .comecar__drop p {
@@ -136,13 +149,13 @@ body {
     background-color: var(--cor-de-fundo);
     padding: 0.5em;
     border-radius: 10px;
-    top: 80px;
+    top: -145px;
     left: 325px;
     height: 200px;
     width: 150px;
     overflow: hidden;
     max-height: 0px;
-    transition: 300ms;
+    transition: 200ms;
     opacity: 0;
 }
 
@@ -152,9 +165,10 @@ body {
     box-shadow: 0 0 10px var(--laranja-escuro);
     overflow-y: hidden;
     max-height: 150px;
-    transition: 400ms;
+    transition: 600ms;
     opacity: 1;
     align-content: space-evenly;
+    top: 80px;
 }
 
 .conta__drop p {
@@ -226,10 +240,14 @@ body {
     width: 60px;
 }
 
-.principal__dir img {
+.flyer {
     height: 65vh;
     max-height: 650px;
     min-height: 400px;
+}
+
+.flyer-mobile {
+    display: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -300,10 +318,15 @@ body {
         margin-left: 2em;
     }
 
+    .nav__hamb {
+        display: block;
+        padding-right: 2em;
+    }
+
     .navbar{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: flex;
         height: 60px;
+        justify-content: space-between;
     }
     
     .nav__lista {
@@ -323,8 +346,17 @@ body {
     }
 
     .principal{
-        flex-direction: column-reverse;
-        padding-top: 8em;
+        flex-direction: column;
+        padding-top: 18em;
+        background-image: url(images/TonelyIMG-main-mobile.png);
+        background-size: 45vh;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-position-y: -20px;
+    }
+
+    .flyer {
+        display: none;
     }
 
     .principal__titulo{
