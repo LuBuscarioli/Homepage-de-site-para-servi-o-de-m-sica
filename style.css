@@ -14,17 +14,18 @@
 body {
     font-family: 'Epilogue';
     font-size: 18px;
+    background: var(--cor-de-fundo);
 }
 
 /****************** NAV INiCIO *************** */
 
 .navbar {
     display: grid;
-    height: 90px;
+    height: 80px;
     grid-template-columns: 1fr 13fr 1fr;
     background: var(--cor-de-fundo);
     align-items: center;
-    /* padding-top: 2vh; */
+    padding-top: 10px;
 }
 
 .navbar__logo {
@@ -38,6 +39,14 @@ body {
    justify-content: flex-start;
 }
 
+.nav__lista img{
+    width: 15px;
+}
+
+.nav__lista img:hover{
+    opacity: 0.5;
+}
+
 .nav__lista li {
     list-style: none;
     letter-spacing: 2px;
@@ -48,7 +57,6 @@ body {
 .nav__lista a {
     color: var(--cinza-txt);
     text-decoration: none;
-    /* padding-right: 2em; */
     transition: 300ms;
 }
 
@@ -92,7 +100,7 @@ body {
     top: 80px;
     left: 130px;
     height: 200px;
-    width: 150px;
+    width: 157px;
     overflow: hidden;
     max-height: 0px;
     transition: 300ms;
@@ -107,15 +115,19 @@ body {
     max-height: 150px;
     transition: 400ms;
     opacity: 1;
+    align-content: space-around;
 }
 
 .comecar__drop p {
-    padding: 8px 0;
     color: var(--cinza-txt);
 }
 
+.comecar__drop p:hover {
+    cursor: pointer;
+}
+
 .comecar__drop img {
-    padding-right: 1px;
+    padding-right: 5px;
 }
 
 .conta__drop {
@@ -142,11 +154,16 @@ body {
     max-height: 150px;
     transition: 400ms;
     opacity: 1;
+    align-content: space-evenly;
 }
 
 .conta__drop p {
     padding: 8px 0;
     color: var(--cinza-txt);
+}
+
+.conta__drop p:hover{
+    cursor:pointer;
 }
 
 .conta__drop img {
@@ -156,13 +173,13 @@ body {
 /*********** DROP FIM ************************/
 
 .principal {
-    height: 92vh;
+    height: 80vh;
     background: var(--cor-de-fundo);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     /* border: 1px solid red; */
-    min-height: 600px;
+    min-height: 500px;
 }
 
 .principal__titulo {
@@ -201,16 +218,38 @@ body {
 .principal__esq-imgs {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 2em;
+    align-items: center;
 }
 
 .principal__esq-imgs img {
-    width: 50px;
+    width: 60px;
 }
 
 .principal__dir img {
     height: 65vh;
     max-height: 650px;
-    min-height: 500px;
+    min-height: 400px;
+}
+
+@media screen and (max-width: 1024px) {
+    .principal__titulo {
+        font-size: 55px;
+    }
+
+    .navbar {
+        font-size: 14px;
+    }
+
+    .nav__buttons{
+        margin-right: 2em;
+    }
+
+    .comecar__drop {
+        left: 105px;
+    }
+
+    .conta__drop {
+        left: 285px;
+    }
 }
