@@ -340,6 +340,11 @@ body {
         border: 1px solid var(--laranja-principal);
         border-radius: 5px;
         box-shadow: 0 0 10px var(--cinza-txt);
+        display:none;
+    }
+
+    .nav__lista.active {
+        display: flex;
     }
 
     .comecar__drop {
