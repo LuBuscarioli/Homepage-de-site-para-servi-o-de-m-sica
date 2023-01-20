@@ -246,10 +246,6 @@ body {
     min-height: 400px;
 }
 
-.flyer-mobile {
-    display: none;
-}
-
 /******************* MEDIA QUERY **********************/
 
 @media screen and (max-width: 1024px) {
@@ -270,11 +266,11 @@ body {
     }
 
     .comecar__drop {
-        left: 52px;
+        left: 68px;
     }
 
     .conta__drop {
-        left: 232px;
+        left: 247px;
     }
 
     .navbar__logo {
@@ -297,8 +293,8 @@ body {
 
     .principal__dir img {
         height: 65vh;
-        max-height: 650px;
-        min-height: 400px;
+        max-height: 400px;
+        /* min-height: 246px; */
     }
 
 }
@@ -336,7 +332,7 @@ body {
         top: 10vh;
         right: 0;
         width: 50vw;
-        height: 80vh;
+        height: 60vh;
         background: var(--cor-de-fundo);
         flex-direction: column;
         align-items: center;
@@ -346,18 +342,23 @@ body {
         box-shadow: 0 0 10px var(--cinza-txt);
     }
 
+    .comecar__drop {
+        left: 17px;
+    }
+
     .comecar__drop.active {
-        top: 60px;
+        top: 87px;
+        left: 17px;
         transition: 400ms;
     }
 
     .conta__drop {
-        left: 56px;
+        left: 23px;
     }
 
     .conta__drop.active {
-        top: 200px;
-        left: 56px;
+        top: 254px;
+        left: 23px;
         transition: 400ms;
     }
 
@@ -367,9 +368,11 @@ body {
 
     .principal{
         flex-direction: column;
-        padding-top: 18em;
+        justify-content: flex-end;
+        height: 50vh;
+        padding-top: 19em;
         background-image: url(images/TonelyIMG-main-mobile.png);
-        background-size: 45vh;
+        background-size: 35vh;
         background-repeat: no-repeat;
         background-position: top;
         background-position-y: -20px;
@@ -397,20 +400,10 @@ body {
     .principal__descricao{
         font-size: 12px;
     }
-
-    .principal{
-        flex-direction: column-reverse;
-        padding-top: 7.5em;
-    }
 }
 
 @media screen and (max-width: 320px) {
     .principal__titulo {
         font-size: 35px;
-    }
-
-    .principal{
-        flex-direction: column-reverse;
-        padding-top: 6.5em;
     }
 }
