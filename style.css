@@ -61,7 +61,7 @@ body {
 }
 
 .nav__lista a:hover {
-    color: black;
+    color: var(--laranja-principal);
     transition: 300ms;
 }
 
@@ -330,21 +330,29 @@ body {
     .nav__lista {
         position: absolute;
         top: 10vh;
-        right: 0;
-        width: 50vw;
+        right: 2px;
+        width: 0vw;
         height: 60vh;
         background: var(--cor-de-fundo);
         flex-direction: column;
+        overflow-x: hidden;
+        display: flex;
+        transition: 200ms;
+        opacity: 0;
         align-items: center;
         justify-content: space-around;
-        border: 1px solid var(--laranja-principal);
-        border-radius: 5px;
-        box-shadow: 0 0 10px var(--cinza-txt);
-        display:none;
+        font-size: 5px;
     }
 
     .nav__lista.active {
         display: flex;
+        border: 1px solid var(--laranja-principal);
+        border-radius: 5px;
+        box-shadow: 0 0 10px var(--cinza-txt);
+        width: 50vw;
+        transition: 200ms;
+        opacity: 1;
+        font-size: 14px;
     }
 
     .comecar__drop {
