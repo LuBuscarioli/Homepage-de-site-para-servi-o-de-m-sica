@@ -67,7 +67,7 @@ body {
 
 .nav__buttons {
     display: flex;
-    /* margin-right: 2em; */
+    margin-right: 2em;
 }
 
 .nav__buttons a {
