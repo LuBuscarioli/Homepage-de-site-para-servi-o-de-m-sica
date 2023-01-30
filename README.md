@@ -1,6 +1,5 @@
 # Home page para aplicatico de música
 
-# Homepage para aplicativo de música
 ### Link de acesso:
 https://homepage-para-app-de-musica.vercel.app/
 
