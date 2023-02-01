@@ -7,6 +7,7 @@ https://homepage-para-app-de-musica.vercel.app/
 
 - Semantic HTML5 
 - CSS 
+- JavaScript
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
